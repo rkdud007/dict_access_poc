@@ -20,16 +20,23 @@
         "0x40780017fff7fff",
         "0x1",
         "0x208b7fff7fff7ffe",
+        "0x40780017fff7fff",
+        "0x1",
         "0x480680017fff8000",
         "0x11",
         "0x1104800180018000",
-        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffffc",
+        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffffa",
         "0x480680017fff8000",
         "0xc",
         "0x480680017fff8000",
         "0x22",
         "0x1104800180018000",
-        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffff1",
+        "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffffef",
+        "0x480680017fff8000",
+        "0xc",
+        "0x1104800180018000",
+        "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffffe2",
+        "0x400a80007fff7fff",
         "0x208b7fff7fff7ffe"
     ],
     "debug_info": {
@@ -494,12 +501,12 @@
                 },
                 "hints": [],
                 "inst": {
-                    "end_col": 53,
+                    "end_col": 18,
                     "end_line": 6,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
-                    "start_col": 51,
+                    "start_col": 5,
                     "start_line": 6
                 }
             },
@@ -517,13 +524,13 @@
                 },
                 "hints": [],
                 "inst": {
-                    "end_col": 54,
-                    "end_line": 6,
+                    "end_col": 53,
+                    "end_line": 7,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
-                    "start_col": 34,
-                    "start_line": 6
+                    "start_col": 51,
+                    "start_line": 7
                 }
             },
             "21": {
@@ -534,33 +541,18 @@
                 "flow_tracking_data": {
                     "ap_tracking": {
                         "group": 3,
-                        "offset": 4
+                        "offset": 2
                     },
-                    "reference_ids": {
-                        "__main__.main.key": 10,
-                        "__main__.main.my_dict": 9
-                    }
+                    "reference_ids": {}
                 },
                 "hints": [],
                 "inst": {
-                    "end_col": 17,
+                    "end_col": 54,
                     "end_line": 7,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
-                    "parent_location": [
-                        {
-                            "end_col": 41,
-                            "end_line": 8,
-                            "input_file": {
-                                "filename": "dict.cairo"
-                            },
-                            "start_col": 38,
-                            "start_line": 8
-                        },
-                        "While expanding the reference 'key' in:"
-                    ],
-                    "start_col": 15,
+                    "start_col": 34,
                     "start_line": 7
                 }
             },
@@ -581,12 +573,24 @@
                 },
                 "hints": [],
                 "inst": {
-                    "end_col": 55,
+                    "end_col": 17,
                     "end_line": 8,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
-                    "start_col": 53,
+                    "parent_location": [
+                        {
+                            "end_col": 41,
+                            "end_line": 9,
+                            "input_file": {
+                                "filename": "dict.cairo"
+                            },
+                            "start_col": 38,
+                            "start_line": 9
+                        },
+                        "While expanding the reference 'key' in:"
+                    ],
+                    "start_col": 15,
                     "start_line": 8
                 }
             },
@@ -607,13 +611,13 @@
                 },
                 "hints": [],
                 "inst": {
-                    "end_col": 56,
-                    "end_line": 8,
+                    "end_col": 55,
+                    "end_line": 9,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
-                    "start_col": 5,
-                    "start_line": 8
+                    "start_col": 53,
+                    "start_line": 9
                 }
             },
             "27": {
@@ -624,47 +628,170 @@
                 "flow_tracking_data": {
                     "ap_tracking": {
                         "group": 3,
-                        "offset": 9
+                        "offset": 7
                     },
                     "reference_ids": {
                         "__main__.main.key": 10,
-                        "__main__.main.my_dict": 11
+                        "__main__.main.my_dict": 9
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 56,
+                    "end_line": 9,
+                    "input_file": {
+                        "filename": "dict.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 9
+                }
+            },
+            "29": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 3,
+                        "offset": 10
+                    },
+                    "reference_ids": {
+                        "__main__.main.key": 10,
+                        "__main__.main.my_dict": 11,
+                        "__main__.main.value_from_hint": 12
                     }
                 },
                 "hints": [
                     {
                         "location": {
-                            "end_col": 26,
-                            "end_line": 10,
-                            "input_file": {
-                                "filename": "dict.cairo"
-                            },
-                            "start_col": 5,
-                            "start_line": 10
-                        },
-                        "n_prefix_newlines": 0
-                    },
-                    {
-                        "location": {
                             "end_col": 7,
-                            "end_line": 18,
+                            "end_line": 17,
                             "input_file": {
                                 "filename": "dict.cairo"
                             },
                             "start_col": 5,
-                            "start_line": 13
+                            "start_line": 12
                         },
                         "n_prefix_newlines": 1
                     }
                 ],
                 "inst": {
-                    "end_col": 15,
-                    "end_line": 20,
+                    "end_col": 17,
+                    "end_line": 8,
+                    "input_file": {
+                        "filename": "dict.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 59,
+                            "end_line": 18,
+                            "input_file": {
+                                "filename": "dict.cairo"
+                            },
+                            "start_col": 56,
+                            "start_line": 18
+                        },
+                        "While expanding the reference 'key' in:"
+                    ],
+                    "start_col": 15,
+                    "start_line": 8
+                }
+            },
+            "31": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 3,
+                        "offset": 11
+                    },
+                    "reference_ids": {
+                        "__main__.main.key": 10,
+                        "__main__.main.my_dict": 11,
+                        "__main__.main.value_from_hint": 12
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 60,
+                    "end_line": 18,
+                    "input_file": {
+                        "filename": "dict.cairo"
+                    },
+                    "start_col": 24,
+                    "start_line": 18
+                }
+            },
+            "33": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 3,
+                        "offset": 16
+                    },
+                    "reference_ids": {
+                        "__main__.main.key": 10,
+                        "__main__.main.my_dict": 13,
+                        "__main__.main.val1": 14,
+                        "__main__.main.value_from_hint": 12
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 35,
+                    "end_line": 19,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
                     "start_col": 5,
-                    "start_line": 20
+                    "start_line": 19
+                }
+            },
+            "34": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 3,
+                        "offset": 16
+                    },
+                    "reference_ids": {
+                        "__main__.main.key": 10,
+                        "__main__.main.my_dict": 13,
+                        "__main__.main.val1": 14,
+                        "__main__.main.value_from_hint": 12
+                    }
+                },
+                "hints": [
+                    {
+                        "location": {
+                            "end_col": 77,
+                            "end_line": 20,
+                            "input_file": {
+                                "filename": "dict.cairo"
+                            },
+                            "start_col": 5,
+                            "start_line": 20
+                        },
+                        "n_prefix_newlines": 0
+                    }
+                ],
+                "inst": {
+                    "end_col": 15,
+                    "end_line": 21,
+                    "input_file": {
+                        "filename": "dict.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 21
                 }
             }
         }
@@ -728,38 +855,43 @@
                 }
             }
         ],
-        "27": [
+        "29": [
             {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
                 ],
-                "code": "a = ids.my_dict",
+                "code": "dict_tracker = __dict_manager.get_tracker(ids.my_dict)\ndict_tracker.current_ptr += 3\nids.value_from_hint = dict_tracker.data[ids.key]\ndict_tracker.current_ptr -= 3",
                 "flow_tracking_data": {
                     "ap_tracking": {
                         "group": 3,
-                        "offset": 9
+                        "offset": 10
                     },
                     "reference_ids": {
                         "__main__.main.key": 10,
-                        "__main__.main.my_dict": 11
+                        "__main__.main.my_dict": 11,
+                        "__main__.main.value_from_hint": 12
                     }
                 }
-            },
+            }
+        ],
+        "34": [
             {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
                 ],
-                "code": "dict_tracker = __dict_manager.get_tracker(a)\ndict_tracker.current_ptr += 3\nvalue_from_hint = dict_tracker.data[ids.key]\nprint(value_from_hint)",
+                "code": "print(f\"val1: {ids.val1}, value_from_hint: {ids.value_from_hint}\")",
                 "flow_tracking_data": {
                     "ap_tracking": {
                         "group": 3,
-                        "offset": 9
+                        "offset": 16
                     },
                     "reference_ids": {
                         "__main__.main.key": 10,
-                        "__main__.main.my_dict": 11
+                        "__main__.main.my_dict": 13,
+                        "__main__.main.val1": 14,
+                        "__main__.main.value_from_hint": 12
                     }
                 }
             }
@@ -805,7 +937,7 @@
         },
         "__main__.main.SIZEOF_LOCALS": {
             "type": "const",
-            "value": 0
+            "value": 1
         },
         "__main__.main.key": {
             "cairo_type": "felt",
@@ -814,9 +946,9 @@
                 {
                     "ap_tracking_data": {
                         "group": 3,
-                        "offset": 4
+                        "offset": 5
                     },
-                    "pc": 21,
+                    "pc": 23,
                     "value": "cast(12, felt)"
                 }
             ],
@@ -829,18 +961,56 @@
                 {
                     "ap_tracking_data": {
                         "group": 3,
-                        "offset": 4
+                        "offset": 5
                     },
-                    "pc": 21,
+                    "pc": 23,
                     "value": "[cast(ap + (-1), starkware.cairo.common.dict_access.DictAccess**)]"
                 },
                 {
                     "ap_tracking_data": {
                         "group": 3,
-                        "offset": 9
+                        "offset": 10
                     },
-                    "pc": 27,
+                    "pc": 29,
                     "value": "[cast(ap + (-1), starkware.cairo.common.dict_access.DictAccess**)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 3,
+                        "offset": 16
+                    },
+                    "pc": 33,
+                    "value": "[cast(ap + (-2), starkware.cairo.common.dict_access.DictAccess**)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.main.val1": {
+            "cairo_type": "felt",
+            "full_name": "__main__.main.val1",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 3,
+                        "offset": 16
+                    },
+                    "pc": 33,
+                    "value": "[cast(ap + (-1), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.main.value_from_hint": {
+            "cairo_type": "felt",
+            "full_name": "__main__.main.value_from_hint",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 3,
+                        "offset": 10
+                    },
+                    "pc": 29,
+                    "value": "[cast(fp, felt*)]"
                 }
             ],
             "type": "reference"
@@ -1209,26 +1379,50 @@
             {
                 "ap_tracking_data": {
                     "group": 3,
-                    "offset": 4
+                    "offset": 5
                 },
-                "pc": 21,
+                "pc": 23,
                 "value": "[cast(ap + (-1), starkware.cairo.common.dict_access.DictAccess**)]"
             },
             {
                 "ap_tracking_data": {
                     "group": 3,
-                    "offset": 4
+                    "offset": 5
                 },
-                "pc": 21,
+                "pc": 23,
                 "value": "cast(12, felt)"
             },
             {
                 "ap_tracking_data": {
                     "group": 3,
-                    "offset": 9
+                    "offset": 10
                 },
-                "pc": 27,
+                "pc": 29,
                 "value": "[cast(ap + (-1), starkware.cairo.common.dict_access.DictAccess**)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 3,
+                    "offset": 10
+                },
+                "pc": 29,
+                "value": "[cast(fp, felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 3,
+                    "offset": 16
+                },
+                "pc": 33,
+                "value": "[cast(ap + (-2), starkware.cairo.common.dict_access.DictAccess**)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 3,
+                    "offset": 16
+                },
+                "pc": 33,
+                "value": "[cast(ap + (-1), felt*)]"
             }
         ]
     }
