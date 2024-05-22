@@ -1,0 +1,1 @@
+cairo-compile dict.cairo --output dict_compiled.json
