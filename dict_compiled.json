@@ -36,7 +36,6 @@
         "0xc",
         "0x1104800180018000",
         "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffffe2",
-        "0x400a80007fff7fff",
         "0x208b7fff7fff7ffe"
     ],
     "debug_info": {
@@ -677,7 +676,7 @@
                     },
                     {
                         "location": {
-                            "end_col": 49,
+                            "end_col": 69,
                             "end_line": 26,
                             "input_file": {
                                 "filename": "dict.cairo"
@@ -686,18 +685,6 @@
                             "start_line": 26
                         },
                         "n_prefix_newlines": 0
-                    },
-                    {
-                        "location": {
-                            "end_col": 7,
-                            "end_line": 36,
-                            "input_file": {
-                                "filename": "dict.cairo"
-                            },
-                            "start_col": 5,
-                            "start_line": 31
-                        },
-                        "n_prefix_newlines": 1
                     }
                 ],
                 "inst": {
@@ -709,12 +696,12 @@
                     "parent_location": [
                         {
                             "end_col": 59,
-                            "end_line": 38,
+                            "end_line": 33,
                             "input_file": {
                                 "filename": "dict.cairo"
                             },
                             "start_col": 56,
-                            "start_line": 38
+                            "start_line": 33
                         },
                         "While expanding the reference 'key' in:"
                     ],
@@ -741,12 +728,12 @@
                 "hints": [],
                 "inst": {
                     "end_col": 60,
-                    "end_line": 38,
+                    "end_line": 33,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
                     "start_col": 24,
-                    "start_line": 38
+                    "start_line": 33
                 }
             },
             "33": {
@@ -768,54 +755,13 @@
                 },
                 "hints": [],
                 "inst": {
-                    "end_col": 35,
-                    "end_line": 39,
-                    "input_file": {
-                        "filename": "dict.cairo"
-                    },
-                    "start_col": 5,
-                    "start_line": 39
-                }
-            },
-            "34": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 3,
-                        "offset": 16
-                    },
-                    "reference_ids": {
-                        "__main__.main.key": 10,
-                        "__main__.main.my_dict": 13,
-                        "__main__.main.val1": 14,
-                        "__main__.main.value_from_hint": 12
-                    }
-                },
-                "hints": [
-                    {
-                        "location": {
-                            "end_col": 77,
-                            "end_line": 40,
-                            "input_file": {
-                                "filename": "dict.cairo"
-                            },
-                            "start_col": 5,
-                            "start_line": 40
-                        },
-                        "n_prefix_newlines": 0
-                    }
-                ],
-                "inst": {
                     "end_col": 15,
-                    "end_line": 41,
+                    "end_line": 35,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
                     "start_col": 5,
-                    "start_line": 41
+                    "start_line": 35
                 }
             }
         }
@@ -885,7 +831,7 @@
                     "__main__",
                     "__main__.main"
                 ],
-                "code": "from syscall.syscall_handler import SyscallHandler \nsyscall_handler = SyscallHandler()",
+                "code": "from syscall.syscall_handler import SyscallHandler \nsyscall_handler = SyscallHandler(dict_manager=__dict_manager)",
                 "flow_tracking_data": {
                     "ap_tracking": {
                         "group": 3,
@@ -903,7 +849,7 @@
                     "__main__",
                     "__main__.main"
                 ],
-                "code": "syscall_handler.syscall(syscall_ptr=1)",
+                "code": "syscall_handler.syscall(dict_ptr=ids.my_dict, key=ids.key)",
                 "flow_tracking_data": {
                     "ap_tracking": {
                         "group": 3,
@@ -912,45 +858,6 @@
                     "reference_ids": {
                         "__main__.main.key": 10,
                         "__main__.main.my_dict": 11,
-                        "__main__.main.value_from_hint": 12
-                    }
-                }
-            },
-            {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "code": "dict_tracker = __dict_manager.get_tracker(ids.my_dict)\ndict_tracker.current_ptr += 3\nids.value_from_hint = dict_tracker.data[ids.key]\ndict_tracker.current_ptr -= 3",
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 3,
-                        "offset": 10
-                    },
-                    "reference_ids": {
-                        "__main__.main.key": 10,
-                        "__main__.main.my_dict": 11,
-                        "__main__.main.value_from_hint": 12
-                    }
-                }
-            }
-        ],
-        "34": [
-            {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "code": "print(f\"val1: {ids.val1}, value_from_hint: {ids.value_from_hint}\")",
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 3,
-                        "offset": 16
-                    },
-                    "reference_ids": {
-                        "__main__.main.key": 10,
-                        "__main__.main.my_dict": 13,
-                        "__main__.main.val1": 14,
                         "__main__.main.value_from_hint": 12
                     }
                 }

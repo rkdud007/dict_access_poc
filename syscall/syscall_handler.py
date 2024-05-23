@@ -12,6 +12,7 @@ from starkware.starknet.core.os.os_logger import OptionalSegmentManager
 from starkware.cairo.lang.vm.memory_segments import MemorySegmentManager
 from starkware.cairo.lang.vm.relocatable import RelocatableValue
 from starkware.starknet.core.os.syscall_utils import get_syscall_structs, load_program
+from starkware.cairo.common.dict import DictManager
 
 class OptionalSegmentManager:
     def __init__(self, segments: Optional[MemorySegmentManager]):
@@ -37,25 +38,31 @@ class SyscallInfo:
     execute_callback: ExecuteSyscallCallback
     request_struct: CairoStructProxy    
 
-class CallType(Enum):
-    Call = 0
-    Delegate = auto()
-
-class EntryPointType(Enum):
-    EXTERNAL = 0
-    L1_HANDLER = auto()
-    CONSTRUCTOR = auto()
-
 class SyscallHandler():
     def __init__(
         self,
+
+        dict_manager: DictManager,
     ):
-        # Static syscall information.
-        self.structs = get_syscall_structs()
+
+        # Memory segments of the running program.
+
+        self._dict_manager = dict_manager
 
     
-    def syscall(self, syscall_ptr: RelocatableValue):
+    def syscall(self, dict_ptr: RelocatableValue, key : int):
         """
         Executes the selected system call.
         """
-        print("syscall_ptr", syscall_ptr)
+        print("syscal_handler.py")
+        self.call_contract(dict_ptr=dict_ptr, key=key)
+    
+
+    def call_contract(self, dict_ptr: RelocatableValue, key:int) -> int:
+        # need to perform memory access in cairo 0 dictionary
+        dict_tracker = self._dict_manager.get_tracker(dict_ptr)
+        dict_tracker.current_ptr += 3
+        value_from_hint = dict_tracker.data[key]
+        dict_tracker.current_ptr -= 3
+        print("value_from_hint", value_from_hint)
+        return value_from_hint
