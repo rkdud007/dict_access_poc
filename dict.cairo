@@ -17,13 +17,13 @@ func main() {
     // Somehow we need to get syscall handler which have custom `call_contract` syscall modification.
     local value_from_hint;
     %{
-        from syscall.syscall_handler import Cairo0SyscallHandler 
-        syscall_handler = Cairo0SyscallHandler()
+        from syscall.syscall_handler import SyscallHandler 
+        syscall_handler = SyscallHandler()
     %}
     // =============================================================================
     // This is kinda fixed defined interface of starknet syscall calling from cairo 1
     // And this line, we will get from compiled cairo1 program.
-    %{ syscall_handler.syscall(syscall_ptr=memory[fp + -3]) %}
+    %{ syscall_handler.syscall(syscall_ptr=1) %}
     // =============================================================================
     // This is actually should be part inside the syscall_handler, especially around `call_contract` syscall
     // So what we need to get is DictAccess* pointer that probably loaded into syscall_handler somehow by input parameters
@@ -34,6 +34,7 @@ func main() {
         ids.value_from_hint = dict_tracker.data[ids.key]
         dict_tracker.current_ptr -= 3
     %}
+    // This is just for double checking
     let (val1: felt) = dict_read{dict_ptr=my_dict}(key=key);
     assert val1 = value_from_hint;
     %{ print(f"val1: {ids.val1}, value_from_hint: {ids.value_from_hint}") %}

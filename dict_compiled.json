@@ -502,12 +502,12 @@
                 "hints": [],
                 "inst": {
                     "end_col": 18,
-                    "end_line": 6,
+                    "end_line": 8,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
                     "start_col": 5,
-                    "start_line": 6
+                    "start_line": 8
                 }
             },
             "19": {
@@ -525,12 +525,12 @@
                 "hints": [],
                 "inst": {
                     "end_col": 53,
-                    "end_line": 7,
+                    "end_line": 9,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
                     "start_col": 51,
-                    "start_line": 7
+                    "start_line": 9
                 }
             },
             "21": {
@@ -548,12 +548,12 @@
                 "hints": [],
                 "inst": {
                     "end_col": 54,
-                    "end_line": 7,
+                    "end_line": 9,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
                     "start_col": 34,
-                    "start_line": 7
+                    "start_line": 9
                 }
             },
             "23": {
@@ -574,24 +574,24 @@
                 "hints": [],
                 "inst": {
                     "end_col": 17,
-                    "end_line": 8,
+                    "end_line": 10,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
                     "parent_location": [
                         {
                             "end_col": 41,
-                            "end_line": 9,
+                            "end_line": 11,
                             "input_file": {
                                 "filename": "dict.cairo"
                             },
                             "start_col": 38,
-                            "start_line": 9
+                            "start_line": 11
                         },
                         "While expanding the reference 'key' in:"
                     ],
                     "start_col": 15,
-                    "start_line": 8
+                    "start_line": 10
                 }
             },
             "25": {
@@ -612,12 +612,12 @@
                 "hints": [],
                 "inst": {
                     "end_col": 55,
-                    "end_line": 9,
+                    "end_line": 11,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
                     "start_col": 53,
-                    "start_line": 9
+                    "start_line": 11
                 }
             },
             "27": {
@@ -638,12 +638,12 @@
                 "hints": [],
                 "inst": {
                     "end_col": 56,
-                    "end_line": 9,
+                    "end_line": 11,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
                     "start_col": 5,
-                    "start_line": 9
+                    "start_line": 11
                 }
             },
             "29": {
@@ -666,60 +666,60 @@
                     {
                         "location": {
                             "end_col": 7,
-                            "end_line": 15,
+                            "end_line": 22,
                             "input_file": {
                                 "filename": "dict.cairo"
                             },
                             "start_col": 5,
-                            "start_line": 12
+                            "start_line": 19
                         },
                         "n_prefix_newlines": 1
                     },
                     {
                         "location": {
-                            "end_col": 63,
-                            "end_line": 16,
+                            "end_col": 49,
+                            "end_line": 26,
                             "input_file": {
                                 "filename": "dict.cairo"
                             },
                             "start_col": 5,
-                            "start_line": 16
+                            "start_line": 26
                         },
                         "n_prefix_newlines": 0
                     },
                     {
                         "location": {
                             "end_col": 7,
-                            "end_line": 22,
+                            "end_line": 36,
                             "input_file": {
                                 "filename": "dict.cairo"
                             },
                             "start_col": 5,
-                            "start_line": 17
+                            "start_line": 31
                         },
                         "n_prefix_newlines": 1
                     }
                 ],
                 "inst": {
                     "end_col": 17,
-                    "end_line": 8,
+                    "end_line": 10,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
                     "parent_location": [
                         {
                             "end_col": 59,
-                            "end_line": 23,
+                            "end_line": 38,
                             "input_file": {
                                 "filename": "dict.cairo"
                             },
                             "start_col": 56,
-                            "start_line": 23
+                            "start_line": 38
                         },
                         "While expanding the reference 'key' in:"
                     ],
                     "start_col": 15,
-                    "start_line": 8
+                    "start_line": 10
                 }
             },
             "31": {
@@ -741,12 +741,12 @@
                 "hints": [],
                 "inst": {
                     "end_col": 60,
-                    "end_line": 23,
+                    "end_line": 38,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
                     "start_col": 24,
-                    "start_line": 23
+                    "start_line": 38
                 }
             },
             "33": {
@@ -769,12 +769,12 @@
                 "hints": [],
                 "inst": {
                     "end_col": 35,
-                    "end_line": 24,
+                    "end_line": 39,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
                     "start_col": 5,
-                    "start_line": 24
+                    "start_line": 39
                 }
             },
             "34": {
@@ -798,24 +798,24 @@
                     {
                         "location": {
                             "end_col": 77,
-                            "end_line": 25,
+                            "end_line": 40,
                             "input_file": {
                                 "filename": "dict.cairo"
                             },
                             "start_col": 5,
-                            "start_line": 25
+                            "start_line": 40
                         },
                         "n_prefix_newlines": 0
                     }
                 ],
                 "inst": {
                     "end_col": 15,
-                    "end_line": 26,
+                    "end_line": 41,
                     "input_file": {
                         "filename": "dict.cairo"
                     },
                     "start_col": 5,
-                    "start_line": 26
+                    "start_line": 41
                 }
             }
         }
@@ -885,7 +885,7 @@
                     "__main__",
                     "__main__.main"
                 ],
-                "code": "from syscall.syscall_handler import Cairo0SyscallHandler \nsyscall_handler = Cairo0SyscallHandler()",
+                "code": "from syscall.syscall_handler import SyscallHandler \nsyscall_handler = SyscallHandler()",
                 "flow_tracking_data": {
                     "ap_tracking": {
                         "group": 3,
@@ -903,7 +903,7 @@
                     "__main__",
                     "__main__.main"
                 ],
-                "code": "syscall_handler.syscall(syscall_ptr=memory[fp + -3])",
+                "code": "syscall_handler.syscall(syscall_ptr=1)",
                 "flow_tracking_data": {
                     "ap_tracking": {
                         "group": 3,
