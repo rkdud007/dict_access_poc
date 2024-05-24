@@ -41,21 +41,18 @@ class SyscallInfo:
 class SyscallHandler():
     def __init__(
         self,
-
         dict_manager: DictManager,
     ):
-
-        # Memory segments of the running program.
-
         self._dict_manager = dict_manager
+  
 
     
-    def syscall(self, dict_ptr: RelocatableValue, key : int):
+    def syscall(self, syscall_ptr: RelocatableValue):
         """
         Executes the selected system call.
         """
         print("syscal_handler.py")
-        self.call_contract(dict_ptr=dict_ptr, key=key)
+      
     
 
     def call_contract(self, dict_ptr: RelocatableValue, key:int) -> int:
